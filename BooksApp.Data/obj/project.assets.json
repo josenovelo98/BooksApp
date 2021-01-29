@@ -2033,6 +2033,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "BooksApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/BooksApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BooksApp.Domain.dll": {}
+        }
       }
     }
   },
@@ -7145,10 +7155,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "BooksApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BooksApp.Domain/BooksApp.Domain.csproj",
+      "msbuildProject": "../BooksApp.Domain/BooksApp.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "BooksApp.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.2"
     ]
   },
@@ -7183,7 +7199,11 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lenovo\\source\\repos\\BooksApp\\BooksApp.Domain\\BooksApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\source\\repos\\BooksApp\\BooksApp.Domain\\BooksApp.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

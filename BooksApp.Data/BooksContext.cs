@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using BooksApp.Domain;
 
 
 
@@ -18,5 +19,6 @@ namespace BooksApp.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         { optionsBuilder.UseSqlServer(connectionString); }
     }
-    }
+   
 }
+
